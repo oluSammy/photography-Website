@@ -1,9 +1,138 @@
-h1 {
+@keyframes slider {
+  0% {
+    left: 0;
+  }
+  20% {
+    left: 0;
+  }
+  25% {
+    left: -100%;
+  }
+  45% {
+    left: -100%;
+  }
+  50% {
+    left: -200%;
+  }
+  70% {
+    left: -200%;
+  }
+  75% {
+    left: -300%;
+  }
+  95% {
+    left: -300%;
+  }
+  100% {
+    left: -400%;
+  }
+}
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 400;
+  line-height: 1.7;
   color: #737373;
 }
 
-p {
-  color: #737373;
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: linear-gradient(to right bottom, rgba(86, 128, 233, 0.8), rgba(136, 96, 208, 0.65), rgba(90, 185, 234, 0.7));
+  width: 100%;
+  padding: 1rem 5rem;
+  z-index: 90;
+  display: flex;
+  align-items: center;
+}
+.nav-logoBox {
+  margin-right: auto;
+}
+.nav-logo {
+  font-size: 3rem;
+  color: #fff;
+  font-family: "Dancing Script", cursive;
+  font-weight: 700;
+}
+.nav-logo span {
+  font-family: "Cormorant Garamond", serif;
+}
+.nav-items {
+  display: flex;
+  align-items: center;
+}
+.nav-items__links {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  margin-right: 2rem;
+}
+.nav-items__social {
+  display: flex;
+  align-items: center;
+}
+.nav-items__social a:not(:last-child) {
+  margin-right: 2rem;
+}
+.nav-link {
+  font-size: 2rem;
+}
+.nav-link a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+}
+.nav-link:not(:last-child) {
+  margin-right: 4rem;
+}
+.nav-icon {
+  width: 2rem;
+  height: 2rem;
+  fill: #fff;
+}
+
+.carousel {
+  overflow: hidden;
+}
+.carousel-container {
+  position: relative;
+  width: 500%;
+  left: 0;
+  margin: 0;
+  animation: 20s slider infinite;
+}
+.carousel-fig {
+  width: 20%;
+  float: left;
+  height: 90vh;
+}
+.carousel-fig__img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.container {
+  display: grid;
+  position: relative;
+  grid-template-rows: 90vh repeat(4, min-content);
+  grid-template-columns: [full-start] minmax(2rem, 1fr) [center-start] repeat(8, minmax(min-content, 15rem) [col-end]) [center-end] minmax(2rem, 1fr) [full-end];
+}
+
+.header {
+  grid-column: 1/-1;
 }
 
 /*# sourceMappingURL=style.css.map */

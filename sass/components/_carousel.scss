@@ -1,0 +1,22 @@
+.carousel {
+    overflow: hidden;
+    &-container {
+        position: relative;
+        width: 500%;
+        left: 0;
+        margin: 0;
+        animation: 20s slider infinite;
+    }
+    
+    &-fig {
+        width: 20%;
+        float: left;
+        height: 90vh;
+
+        &__img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+}

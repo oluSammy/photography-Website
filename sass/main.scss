@@ -1,10 +1,19 @@
 @import "./abstracts/mixins";
 @import "./abstracts/variables";
+@import "./abstracts/animation";
+
+@import "./base/animation";
+@import "./base/base";
+@import "./base/animation";
+@import "./base/utilities";
+
+@import "./components/navigation";
+@import "./components/carousel";
+
 
 @import "./pages/home";
 
 
 @import "./layout/grid";
-
-
+@import "./layout//header";
 
