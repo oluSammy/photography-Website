@@ -1,0 +1,16 @@
+@mixin img-responsive {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+@mixin outline {
+    transition: all .2s;
+    outline: .5rem solid $color-secondary;
+    outline-offset: .7rem;
+}
+
+@mixin outline-hover {
+    z-index: 20;
+    transform: scale(1.2) translateY(-5px);
+}

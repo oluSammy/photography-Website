@@ -11,12 +11,10 @@
     &-fig {
         width: 20%;
         float: left;
-        height: 90vh;
+        height: 85vh;
 
         &__img {
-            height: 100%;
-            width: 100%;
-            object-fit: cover;
+            @include img-responsive;
         }
     }
 }

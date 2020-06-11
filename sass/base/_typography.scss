@@ -1,0 +1,15 @@
+.gradient-heading {
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    background-image: linear-gradient(to right bottom, $color-primary, $color-secondary, $color-tertiary-1);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.italic-heading {
+    font-size: 2.1rem;
+    text-transform: capitalize;
+    font-family: $font-italic;
+    text-decoration: solid underline $color-secondary;
+}

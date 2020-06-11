@@ -1,0 +1,13 @@
+.btn {
+    padding: .5rem 1rem;
+    font-size: 1.8rem;
+    background: linear-gradient(to right bottom, $color-primary, $color-secondary, $color-tertiary-1);
+    border: 2px $color-white;
+    color: $color-white;
+    cursor: pointer;
+    transition: all .2s;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+}
