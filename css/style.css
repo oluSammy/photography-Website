@@ -63,7 +63,7 @@ body {
 }
 
 .section-padding {
-  padding: 5rem 0;
+  padding: 10rem 0;
 }
 
 .section-padding-bm {
@@ -146,6 +146,7 @@ body {
   height: 100%;
   width: 100%;
   object-fit: cover;
+  display: block;
 }
 
 .btn {
@@ -164,15 +165,23 @@ body {
 .container {
   display: grid;
   position: relative;
-  grid-template-rows: 90vh repeat(4, min-content);
+  grid-template-rows: 90vh min-content 50vw 100vh repeat(4, min-content);
   grid-template-columns: [full-start] minmax(2rem, 1fr) [center-start] repeat(8, minmax(min-content, 15rem) [col-end]) [center-end] minmax(2rem, 1fr) [full-end];
 }
 
 .about {
   grid-column: center-start/center-end;
+  grid-row: 2/3;
   display: grid;
   grid-template-rows: repeat(2, min-content);
   grid-row-gap: 3rem;
+}
+
+.testimonial {
+  grid-row: 3/4;
+  grid-column: full-start/full-end;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(58.5rem, 1fr));
 }
 
 .header {
@@ -247,6 +256,60 @@ body {
   height: 100%;
   width: 100%;
   object-fit: cover;
+  display: block;
+}
+
+.testimonial__images {
+  background-image: linear-gradient(rgba(86, 128, 233, 0.4), rgba(136, 96, 208, 0.6)), url(../img/joe_smith_photography_background-image.jpg);
+  background-size: cover;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+}
+.testimonial__images-1 {
+  grid-column: 1/5;
+  grid-row: 1/4;
+}
+.testimonial__images-2 {
+  grid-column: 4/-1;
+  grid-row: 3/-1;
+  height: 110%;
+  width: 110%;
+}
+.testimonial__images img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  display: block;
+}
+.testimonial__section {
+  align-self: center;
+}
+.testimonial__section-box {
+  width: 75%;
+  margin: 0 auto;
+}
+.testimonial__section-client {
+  font-size: 2rem;
+  font-weight: 500;
+  color: #5680E9;
+  margin-bottom: 3rem;
+}
+.testimonial__section-text {
+  font-size: 2rem;
+  text-align: justify;
+}
+.testimonial__section-text span {
+  font-size: 2.5rem;
+  color: #5680E9;
+}
+.testimonial__section-names {
+  font-size: 3rem;
+  color: #5680E9;
+  margin-left: 60%;
+}
+.testimonial__section-action {
+  font-size: 1.9rem;
 }
 
 /*# sourceMappingURL=style.css.map */

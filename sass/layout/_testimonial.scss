@@ -1,0 +1,64 @@
+.testimonial {
+    
+    &__images {
+        background-image: linear-gradient(rgba($color-primary, .4), rgba($color-secondary, .6)), 
+        url(../img/joe_smith_photography_background-image.jpg);
+        background-size: cover;
+
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        
+        &-1{
+            grid-column: 1 / 5;
+            grid-row: 1 / 4;
+        }
+
+        &-2 {
+            grid-column: 4 / -1;
+            grid-row: 3 / -1;
+            height: 110%;
+            width: 110%;
+        }
+
+        & img {
+            @include img-responsive;
+        }
+    }
+
+    &__section {
+        align-self: center;
+
+        &-box {
+            width: 75%;
+            margin: 0 auto;
+        }
+
+        &-client {
+            font-size: 2rem;
+            font-weight: 500;
+            color: $color-primary;
+            margin-bottom: 3rem;
+        }
+
+        &-text {
+            font-size: 2rem;
+            text-align: justify;
+
+            & span {
+                font-size: 2.5rem;
+                color: $color-primary;
+            }
+        }
+
+        &-names {
+            font-size: 3rem;
+            color: $color-primary;
+            margin-left: 60%;
+        }
+
+        &-action {
+            font-size: 1.9rem;
+        }
+    }
+}
