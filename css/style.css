@@ -152,11 +152,19 @@ body {
 .btn {
   padding: 0.5rem 1rem;
   font-size: 1.8rem;
-  background: linear-gradient(to right bottom, #5680E9, #8860D0, #5AB9EA);
   border: 2px #fff;
-  color: #fff;
   cursor: pointer;
   transition: all 0.2s;
+  text-decoration: none;
+}
+.btn--primary {
+  color: #fff;
+  background: linear-gradient(to right bottom, #5680E9, #8860D0, #5AB9EA);
+}
+.btn--secondary {
+  background-color: #fff;
+  color: #5680E9;
+  border-radius: 4px;
 }
 .btn:hover {
   transform: scale(1.1);
@@ -224,7 +232,7 @@ body {
 }
 .card__content {
   display: grid;
-  grid-template-rows: 10rem 19rem;
+  grid-template-rows: 10rem 26rem;
   background: linear-gradient(to right bottom, rgba(86, 128, 233, 0.9), rgba(136, 96, 208, 0.9), rgba(90, 185, 234, 0.9));
   border-radius: 1rem;
   margin-top: -10rem;
@@ -235,6 +243,9 @@ body {
   width: 80%;
   margin: 7% auto 0 auto;
 }
+.card__content--cta {
+  margin-left: 18%;
+}
 .card__content--header {
   font-size: 3rem;
   text-align: center;
@@ -244,6 +255,7 @@ body {
   font-size: 1.8rem;
   text-align: center;
   font-weight: 700;
+  margin-bottom: 2rem;
 }
 
 .container {

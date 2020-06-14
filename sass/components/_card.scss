@@ -68,7 +68,7 @@
 
     &__content {
         display: grid;
-        grid-template-rows: 10rem 19rem;
+        grid-template-rows: 10rem 26rem;
 
         background: linear-gradient(to right bottom, rgba($color-primary, .9), rgba($color-secondary, .9), rgba($color-tertiary-1, .9));
         border-radius: 1rem;
@@ -81,6 +81,10 @@
             margin: 7% auto 0 auto;
         }
 
+        &--cta {
+            margin-left: 18%;
+        }
+
         &--header {
             font-size: 3rem;
             text-align: center;
@@ -91,6 +95,7 @@
             font-size: 1.8rem;
             text-align: center;
             font-weight: 700;
+            margin-bottom: 2rem;
         }
     }
 }
