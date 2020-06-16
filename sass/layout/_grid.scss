@@ -2,7 +2,7 @@
     display: grid;
     position: relative;
 
-    grid-template-rows: 90vh min-content min-content min-content min-content min-content 50vh;
+    grid-template-rows: 90vh min-content min-content min-content min-content min-content min-content;
     grid-template-columns: [full-start] minmax(2rem, 1fr) [center-start] repeat(8, minmax(min-content, 15rem) [col-end] ) [center-end] 
     minmax(2rem, 1fr) [full-end];
 }
@@ -41,4 +41,9 @@
     grid-row: 6 / 7;
     grid-column: full-start / full-end;
 
+}
+
+.home-footer {
+    grid-row: 7 / -1;
+    grid-column: full-start / full-end;
 }

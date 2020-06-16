@@ -15,3 +15,8 @@
     z-index: 20;
     transform: scale(1.2) translateY(-5px);
 }
+
+@mixin center-max-content {
+    width: max-content;
+    margin: 0 auto;
+}
