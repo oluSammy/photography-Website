@@ -29,7 +29,8 @@
             display: flex;
             align-items: center;
             & a {
-                font-size: 1.4rem;
+                font-size: 1.8rem;
+                font-family: $font-primary;
             }
         }
 
@@ -58,6 +59,13 @@
                     margin-right: 1rem;
                 }
             }
+        }
+
+        &--icon {
+            width: 2.5rem;
+            height: 2.5rem;
+            fill: red;
+            margin-right: 5px;
         }
     }
 }
