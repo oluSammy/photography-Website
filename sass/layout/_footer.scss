@@ -4,7 +4,7 @@
     margin-top: -5rem;
 
     display: grid;
-    grid-template-columns: minmax(2rem, 1fr) repeat(4, minmax(min-content, 18.75rem)) 1fr;
+    grid-template-columns: 1fr repeat(4, minmax(min-content, 18.75rem)) 1fr;
     grid-template-rows: repeat(7, min-content);
     grid-row-gap: 3rem;
     color: $color-white;
@@ -102,6 +102,10 @@
         grid-row: 7 / -1;
         grid-column: 2 / 4;        
         font-size: 1.4rem;
+
+        @media only screen and (max-width: $bp-mobile) {
+            grid-column: 2 / 6;
+        }
     }
 
     &__designer {
@@ -111,5 +115,10 @@
         @include center-max-content;
 
         font-size: 1.8rem;
+
+        @media only screen and (max-width: $bp-mobile) {
+            grid-row: 8 / -1;
+            grid-column: 2 / 6;
+        }
     }
 }

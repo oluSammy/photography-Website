@@ -5,6 +5,10 @@
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
+
+    @media only screen and (max-width: $bp-mobile){
+        font-size: 2.5rem;
+    }
 }
 
 .italic-heading {

@@ -1,7 +1,22 @@
 .section-padding {
     margin: 10rem 0;
+
+    @media only screen and (max-width: $bp-mobile){
+        margin: 7rem 0;
+    }
 }
 
 .section-padding-bm {
     margin-bottom: 5rem;
+
+    @media only screen and (max-width: $bp-mobile){
+        margin-bottom: 3rem;
+    }
+}
+
+.hide-on-mobile {
+
+    @media only screen and (max-width: $bp-mobile){
+        display: none;
+     }
 }

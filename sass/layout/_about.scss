@@ -1,4 +1,9 @@
 .about {
+
+    @media only screen and (max-width: $bp-medium){
+        margin: 0 auto;
+        width: 90%;
+    }
     
     &-header {
         text-align: center;
@@ -28,6 +33,10 @@
         &__btn {
             margin-left: 60%;
             margin-top: .4rem;
+
+            @media only screen and (max-width: $bp-medium){
+               margin-top: 4rem;
+            }
         }
 
         &__pictures {            
@@ -35,6 +44,10 @@
 
             grid-template-columns: repeat(5, 1fr);
             grid-template-rows: repeat(5, 9rem);
+
+            @media only screen and (max-width: $bp-medium){
+                margin-top: 5rem;
+            }          
 
             &--1 {
                 @include outline;
@@ -49,6 +62,7 @@
             }
 
             &--2 {
+                overflow: hidden;
                 @include outline;
 
                 grid-column: 3 / -1;
@@ -69,6 +83,10 @@
 
                 &:hover {
                     @include outline-hover;
+                }
+
+                @media only screen and (max-width: $bp-mobile){
+                    grid-row: 4 / -1;
                 }
             }
             & img {                

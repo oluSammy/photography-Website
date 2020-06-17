@@ -16,3 +16,10 @@ $text-color: #737373;
 $font-primary: 'Cormorant Garamond', serif;
 $font-secondary: 'Noto Serif JP', serif;
 $font-italic: 'Dancing Script', cursive;
+
+//media query variables
+
+$bp-largest: 70em;      //1120px
+$bp-medium: 54.375em;   //870px
+$bp-mobile: 41.875em;   //670px
+$bp-small: 36.69em;     //587px

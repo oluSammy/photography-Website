@@ -20,6 +20,10 @@
         font-family: $font-italic;
         font-weight: 700;
 
+        @media only screen and (max-width: $bp-small) {
+            font-size: 2rem;
+        }
+
         & span {
             font-family: $font-primary;
         }
@@ -44,13 +48,22 @@
             & a {
                 &:not(:last-child) {
                     margin-right: 2rem;
+
+                    @media only screen and (max-width: $bp-small) {
+                        margin-right: 1rem;
+                    }
                 }
+
             }
         }
     }
 
     &-link {
         font-size: 2rem;
+
+        @media only screen and (max-width: $bp-small) {
+            font-size: 1.6rem;
+        }
 
         & a{
             color: $color-white;
