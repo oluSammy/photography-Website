@@ -86,6 +86,11 @@ body {
   font-family: "Dancing Script", cursive;
   font-weight: 400;
 }
+@media only screen and (max-width: 54.375em) {
+  .footer-heading {
+    font-size: 2rem;
+  }
+}
 
 .footer-address {
   font-size: 1.6rem;
@@ -354,7 +359,7 @@ body {
 }
 @media only screen and (max-width: 36.69em) {
   .story__shape {
-    margin: 0 auto -20% 33%;
+    margin: 0 auto -20% 28%;
   }
 }
 .story__img {
@@ -449,6 +454,7 @@ body {
 }
 .about-header {
   text-align: center;
+  margin-top: -1rem;
   grid-row: 1/1;
   grid-column: 1/-1;
 }
@@ -456,6 +462,11 @@ body {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
   grid-column-gap: 3rem;
+}
+@media only screen and (max-width: 54.375em) {
+  .about-content {
+    grid-template-columns: repeat(auto-fit, minmax(37rem, 1fr));
+  }
 }
 .about-content__text {
   font-size: 1.9rem;
@@ -467,12 +478,13 @@ body {
   align-self: center;
 }
 .about-content__btn {
+  display: block;
   margin-left: 60%;
-  margin-top: 0.4rem;
+  width: max-content;
 }
 @media only screen and (max-width: 54.375em) {
   .about-content__btn {
-    margin-top: 4rem;
+    margin-top: 3rem;
   }
 }
 .about-content__pictures {
@@ -482,7 +494,7 @@ body {
 }
 @media only screen and (max-width: 54.375em) {
   .about-content__pictures {
-    margin-top: 5rem;
+    margin-top: 8rem;
   }
 }
 .about-content__pictures--1 {
@@ -597,7 +609,7 @@ body {
 }
 @media only screen and (max-width: 41.875em) {
   .testimonial__section-names {
-    margin-left: 50%;
+    margin-left: 40%;
   }
 }
 .testimonial__section-action {
@@ -736,10 +748,16 @@ body {
   padding: 10rem;
   margin-top: -5rem;
   display: grid;
-  grid-template-columns: 1fr repeat(4, minmax(min-content, 18.75rem)) 1fr;
+  grid-template-columns: 1fr repeat(4, minmax(max-content, 18.75rem)) 1fr;
   grid-template-rows: repeat(7, min-content);
   grid-row-gap: 3rem;
+  grid-row-gap: 3rem;
   color: #fff;
+}
+@media only screen and (max-width: 54.375em) {
+  .footer {
+    padding: 3rem;
+  }
 }
 .footer__heading {
   grid-row: 1/2;
@@ -802,6 +820,7 @@ body {
 }
 .footer__phone--1 {
   grid-column: 3/4;
+  margin-right: 4px;
 }
 .footer__phone--2 {
   grid-column: 4/5;
@@ -810,7 +829,10 @@ body {
   height: 1.8rem;
   width: 1.8rem;
   fill: #fff;
-  margin-right: 0.7rem;
+  margin-right: 0.8rem;
+}
+.footer__phone a {
+  color: orangered;
 }
 .footer__copyright {
   width: max-content;
@@ -835,7 +857,11 @@ body {
   .footer__designer {
     grid-row: 8/-1;
     grid-column: 2/6;
+    text-align: center;
   }
+}
+.footer__designer a {
+  color: orangered;
 }
 
 /*# sourceMappingURL=style.css.map */

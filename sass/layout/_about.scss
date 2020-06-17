@@ -7,6 +7,7 @@
     
     &-header {
         text-align: center;
+        margin-top: -1rem;
 
         grid-row: 1 / 1;
         grid-column: 1 / -1;
@@ -17,6 +18,10 @@
 
         grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
         grid-column-gap: 3rem;
+
+        @media only screen and (max-width: $bp-medium){
+            grid-template-columns: repeat(auto-fit, minmax(37rem, 1fr));
+         }
 
         &__text {
             font-size: 1.9rem;
@@ -31,11 +36,14 @@
         }
 
         &__btn {
+            display: block;
             margin-left: 60%;
-            margin-top: .4rem;
+            width: max-content;
+            // margin-top: 3rem;
+            // margin-top: 9rem;
 
             @media only screen and (max-width: $bp-medium){
-               margin-top: 4rem;
+                margin-top: 3rem;
             }
         }
 
@@ -46,7 +54,7 @@
             grid-template-rows: repeat(5, 9rem);
 
             @media only screen and (max-width: $bp-medium){
-                margin-top: 5rem;
+                margin-top: 8rem;
             }          
 
             &--1 {

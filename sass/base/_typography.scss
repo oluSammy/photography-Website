@@ -31,7 +31,10 @@
     color: $color-white;
     font-family: $font-italic;
     font-weight: 400;
-    // border-bottom: 1px solid $color-white;
+    
+    @media only screen and (max-width: $bp-medium){
+        font-size: 2rem;
+    }
 }
 
 .footer-address {
