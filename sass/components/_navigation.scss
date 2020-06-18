@@ -83,4 +83,23 @@
         height: 2rem;
         fill: $color-white;
     }
+
+    &__burger {
+        cursor: pointer;
+        display: none;
+        
+        & > * {
+            width: 20px;
+            height: 2px;
+            background-color: $color-white;
+
+            &:not(:last-child) {
+                margin-bottom: 4px;
+            }
+        }
+
+        @media only screen and (max-width: $bp-mobile){
+            display: block;
+         }
+    }
 }

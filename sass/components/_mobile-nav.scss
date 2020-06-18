@@ -1,0 +1,42 @@
+.mobile-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 88vw;
+    background-color: rgba($color: $color-black, $alpha: .8);
+    // background-color: $color-white;
+    z-index: 99;
+    
+    transform: translateX(-100%);
+
+    &__list {
+        width: 80%;
+        margin-top: 5rem;
+        margin-left: 15%;
+
+        &--item {
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    &__icon {
+        width: 1.4rem;
+        height: 1.4rem;
+        margin-right: 1rem;
+    }
+
+    &__link {
+        text-decoration: none;
+        font-size: 3rem;
+        color: $color-white;
+    }
+
+    &__arrow {
+        font-size: 1.7rem;
+        color: $color-primary;
+        margin-right: 2rem;
+        // height: 3rem;
+    }
+}

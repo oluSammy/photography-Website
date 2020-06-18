@@ -196,6 +196,23 @@ body {
   height: 2rem;
   fill: #fff;
 }
+.nav__burger {
+  cursor: pointer;
+  display: none;
+}
+.nav__burger > * {
+  width: 20px;
+  height: 2px;
+  background-color: #fff;
+}
+.nav__burger > *:not(:last-child) {
+  margin-bottom: 4px;
+}
+@media only screen and (max-width: 41.875em) {
+  .nav__burger {
+    display: block;
+  }
+}
 
 .carousel {
   overflow: hidden;
@@ -398,6 +415,41 @@ body {
   font-size: 2.5rem;
   font-weight: 700;
   color: #5680E9;
+}
+
+.mobile-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 88vw;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 99;
+  transform: translateX(-100%);
+}
+.mobile-nav__list {
+  width: 80%;
+  margin-top: 5rem;
+  margin-left: 15%;
+}
+.mobile-nav__list--item {
+  display: flex;
+  align-items: center;
+}
+.mobile-nav__icon {
+  width: 1.4rem;
+  height: 1.4rem;
+  margin-right: 1rem;
+}
+.mobile-nav__link {
+  text-decoration: none;
+  font-size: 3rem;
+  color: #fff;
+}
+.mobile-nav__arrow {
+  font-size: 1.7rem;
+  color: #5680E9;
+  margin-right: 2rem;
 }
 
 .container {
