@@ -446,6 +446,7 @@ body {
 .mobile-nav__list--item {
   display: flex;
   align-items: center;
+  margin-bottom: 1.6rem;
 }
 .mobile-nav__icon {
   width: 1.4rem;
@@ -454,6 +455,7 @@ body {
 }
 .mobile-nav__link {
   text-decoration-color: #5680E9;
+  text-decoration-thickness: 0.3px;
   font-size: 3rem;
   font-weight: 700;
   color: #fff;
