@@ -13,6 +13,10 @@
         @media only screen and (max-width: $bp-small) {
             margin: 0 auto -20% 28%;
         }
+
+        @media only screen and (max-width: $bp-mini) {
+            margin: 0 auto -20% 23%;
+        }
     }
     
     &__img {
