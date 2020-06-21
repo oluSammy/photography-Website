@@ -1,0 +1,54 @@
+.slideshow {
+    position: relative;
+    margin-top: 7rem;
+
+    @media only screen and (max-width: $bp-small){
+        margin-top: 5.2rem;
+    }
+
+    &__slide {
+        display: none;
+        width: 100%;
+        height: 50vw;
+
+        &--img {
+            @include img-responsive;
+        }
+    }
+
+    &__control {
+        position: absolute;
+        top: 50%;
+        background-color: rgba($color: #000000, $alpha: .7);
+        font-size: 3rem;
+        color: $color-white;
+        padding: 1rem;
+        border-radius: 1rem;
+        cursor: pointer;
+
+        @media only screen and (max-width: $bp-mobile){
+            font-size: 2rem;
+            padding: .5rem;
+        }
+
+        @media only screen and (max-width: $bp-mini){
+            font-size: 1.6rem;
+            padding: .3rem;
+        }
+        
+        &--left {
+            margin-left: 2rem;
+        }
+
+        &--right {
+            right: 0;
+            margin-right: 3.5rem;
+        }
+
+    }
+}
+
+.slideshow__slide.active {
+    display: block;
+    animation: slideshow 1s ease-in-out;
+}

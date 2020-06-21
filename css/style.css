@@ -27,6 +27,16 @@
     left: -400%;
   }
 }
+@keyframes slideshow {
+  0% {
+    opacity: 0;
+    transform: scale(1.08);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
 *,
 *::before,
 *::after {
@@ -466,6 +476,61 @@ body {
   margin-right: 2rem;
 }
 
+.slideshow {
+  position: relative;
+  margin-top: 7rem;
+}
+@media only screen and (max-width: 36.69em) {
+  .slideshow {
+    margin-top: 5.2rem;
+  }
+}
+.slideshow__slide {
+  display: none;
+  width: 100%;
+  height: 50vw;
+}
+.slideshow__slide--img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  display: block;
+}
+.slideshow__control {
+  position: absolute;
+  top: 50%;
+  background-color: rgba(0, 0, 0, 0.7);
+  font-size: 3rem;
+  color: #fff;
+  padding: 1rem;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+@media only screen and (max-width: 41.875em) {
+  .slideshow__control {
+    font-size: 2rem;
+    padding: 0.5rem;
+  }
+}
+@media only screen and (max-width: 25.93em) {
+  .slideshow__control {
+    font-size: 1.6rem;
+    padding: 0.3rem;
+  }
+}
+.slideshow__control--left {
+  margin-left: 2rem;
+}
+.slideshow__control--right {
+  right: 0;
+  margin-right: 3.5rem;
+}
+
+.slideshow__slide.active {
+  display: block;
+  animation: slideshow 1s ease-in-out;
+}
+
 .container {
   display: grid;
   position: relative;
@@ -498,7 +563,7 @@ body {
   grid-column: center-start/center-end;
 }
 
-.contact {
+.home-contact {
   grid-row: 5/6;
   grid-column: center-start/center-end;
 }
@@ -511,6 +576,28 @@ body {
 .home-footer {
   grid-row: 7/-1;
   grid-column: full-start/full-end;
+}
+
+.slidepage-container {
+  display: grid;
+  position: relative;
+  grid-template-columns: [full-start] minmax(2rem, 1fr) [center-start] repeat(8, minmax(min-content, 15rem) [col-end]) [center-end] minmax(2rem, 1fr) [full-end];
+  grid-template-rows: min-content min-content min-content;
+}
+
+.slideshow {
+  grid-column: 1/-1;
+  grid-row: 1/2;
+}
+
+.slide-contact {
+  grid-column: center-start/center-end;
+  grid-row: 2/3;
+}
+
+.slide-footer {
+  grid-column: 1/-1;
+  grid-row: 3/4;
 }
 
 .header {
