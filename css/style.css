@@ -488,7 +488,7 @@ body {
 .slideshow__slide {
   display: none;
   width: 100%;
-  height: 50vw;
+  height: 65vw;
 }
 .slideshow__slide--img {
   height: 100%;
@@ -523,7 +523,7 @@ body {
 }
 .slideshow__control--right {
   right: 0;
-  margin-right: 3.5rem;
+  margin-right: 2rem;
 }
 
 .slideshow__slide.active {
