@@ -488,7 +488,7 @@ body {
 .slideshow__slide {
   display: none;
   width: 100%;
-  height: 65vw;
+  height: 50vw;
 }
 .slideshow__slide--img {
   height: 100%;
